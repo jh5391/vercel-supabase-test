@@ -13,9 +13,7 @@ const logAccess = (action: string, data?: any) => {
   };
   
   // 개발 환경에서는 콘솔에 출력
-  if (process.env.NODE_ENV === 'development') {
-    console.log('Access Log:', JSON.stringify(logData, null, 2));
-  }
+  console.log('Access Log:', JSON.stringify(logData, null, 2));
   
   return logData;
 };
